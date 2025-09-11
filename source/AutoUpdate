@@ -14,8 +14,8 @@ pip install illuminator --no-deps
 # For some reason it behaves as if illuminator does not exist
 echo "Building sphinx documentation..."
 # Very odd behaviour. Building once creates warnings, building twice doesnt.
-sphinx-build -M html ./source ./docs 
-sphinx-build -M html ./source ./docs --fail-on-warning
+sphinx-build ./source ./docs 
+sphinx-build ./source ./docs --fail-on-warning
 
 
 
