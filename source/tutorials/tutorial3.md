@@ -9,7 +9,7 @@ The linked colab files cannot currently be run on web, they serve as a way to sc
 
 
 <p>
-    <a href="https://colab.research.google.com/drive/1tgY-3FGL6QunT6xY3Te0QeGcSzDy3-3Q?usp=drive_open">
+    <a href="https://colab.research.google.com/github/Illuminator-team/educational_material/blob/main/tutorials/physical_congestion/tutorial_physical_congestion.ipynb">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
     </a>
     <a href="../_static/zips/physical_congestion.zip">

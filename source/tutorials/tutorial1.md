@@ -7,7 +7,7 @@ The linked colab files cannot currently be run on web, they serve as a way to sc
 <iframe src="https://nbviewer.org/github/Illuminator-team/educational_material/blob/main/tutorials/power_balance/tutorial_power_balance.ipynb" width="100%" height="600"></iframe>
 
 <p>
-    <a href="https://colab.research.google.com/drive/1U12qVE2jlH-1NH_Ig8seSVkw6VikFWmw?usp=drive_open">
+    <a href="https://colab.research.google.com/github/Illuminator-team/educational_material/blob/main/tutorials/power_balance/tutorial_power_balance.ipynb">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
     </a>
     <a href="../_static/zips/power_balance.zip">

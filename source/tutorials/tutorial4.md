@@ -13,7 +13,7 @@ Download the zip folder by clicking on the Download ZIP button below, then open 
 :::
 
 <p>
-    <a href="https://colab.research.google.com/drive/1pwBJ3ZNY9ddhF24Dhm9UUoQgnSs-lIVJ?usp=sharing">
+    <a href="https://colab.research.google.com/github/Illuminator-team/educational_material/blob/main/tutorials/residential/Illuminator_BSc_Tutorial.ipynb">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
     </a>
     <a href="../_static/zips/residential.zip">

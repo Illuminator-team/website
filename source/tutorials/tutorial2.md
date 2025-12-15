@@ -7,7 +7,7 @@ The linked colab files cannot currently be run on web, they serve as a way to sc
 <iframe src="https://nbviewer.org/github/Illuminator-team/educational_material/blob/main/tutorials/markets/tutorial_electricity_markets_intro.ipynb" width="100%" height="600"></iframe>
 
 <p>
-    <a href="https://colab.research.google.com/drive/1BndrGvOsi4ZesE4VKNECknDkbAGV77P_?usp=drive_open">
+    <a href="https://colab.research.google.com/github/Illuminator-team/educational_material/blob/main/tutorials/markets/tutorial_electricity_markets_intro.ipynb">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
     </a>
     <a href="../_static/zips/markets.zip">
