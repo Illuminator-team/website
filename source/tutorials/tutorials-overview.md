@@ -30,11 +30,8 @@ This serves as an excellent starting point if you do not have python in your sys
 
 Make sure you have internet access.
 
-1. Navigate to google colab and select Open Colab.
-2. In the pop up menu, navigate to the GitHub tab and select it.
-3. In the URL field enter the following link: `https://github.com/Illuminator-team/educational_material` and click the search icon.
-4. Select the tutorial notebook you wish to run from the list of available notebooks (ipynb).
-5. Run the cells, the colab environment executes the simulations and allows you to make changes in the configuration file of the simulation (yaml) through simple functions.
+1. Click the `Open in Colab` button.
+2. Run the cells, the colab environment executes the simulations and allows you to make changes in the configuration file of the simulation (yaml) through simple functions.
 
 :::{note}
 As this is a web hosted environment, installing the Illuminator will take a few minutes. Once installation is complete you will be asked to restart your session. After that you may continue running the rest of the notebook cells.
