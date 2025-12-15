@@ -3,4 +3,4 @@
 **.pytest_cache/
 **.venv/
 **src/
-**.source/_build
+**.source/_build/
