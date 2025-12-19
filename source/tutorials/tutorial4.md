@@ -13,10 +13,10 @@ Download the zip folder by clicking on the Download ZIP button below, then open 
 :::
 
 <p>
-    <a href="https://colab.research.google.com/drive/1pwBJ3ZNY9ddhF24Dhm9UUoQgnSs-lIVJ?usp=sharing">
+    <a href="https://colab.research.google.com/github/Illuminator-team/educational_material/blob/main/tutorials/residential/Illuminator_BSc_Tutorial.ipynb">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
     </a>
-    <a href="https://github.com/Illuminator-team/Illuminator/raw/tutorial4/examples/Tutorial4/Tutorial4.zip">
+    <a href="../_static/zips/residential.zip">
         <img src="https://img.shields.io/badge/Download-ZIP-blue?style=for-the-badge&logo=download" alt="Download ZIP">
     </a>
 </p>
