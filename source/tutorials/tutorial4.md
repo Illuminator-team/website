@@ -9,7 +9,7 @@ This is a residential case tutorial for the BSc course of 2025.
 <br>
 
 :::{note}
-Download the zip folder by clicking on the Download ZIP button below, then open the google colab notebook.
+Download the zip folder by clicking on the Download ZIP button below, or open the google colab environment.
 :::
 
 <p>
