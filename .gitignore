@@ -1,6 +1,8 @@
 **.DS_Store
 **.vscode/
 **.pytest_cache/
-**.venv/
+**venv/
 **src/
 **.source/_build/
+
+**docs/
