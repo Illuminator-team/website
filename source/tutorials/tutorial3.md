@@ -1,6 +1,6 @@
 # Tutorial: Grid Congestion
 :::{note}
-The linked colab files cannot currently be run on web, they serve as a way to scan through the tutorial contents before installing and running them locally.
+Download the zip folder by clicking on the Download ZIP button below, or open the google colab environment.
 :::
 
 
