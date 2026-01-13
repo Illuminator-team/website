@@ -42,9 +42,11 @@ Illuminator builts on `Mosaik. <https://mosaik.offis.de/>`_ and supports both st
 
    developer/set-up.md
    developer/software-architecture.md
+   developer/repo-automation.md
    developer/developer-docstrings.md
    developer/testing-explained.md
    developer/writing-tests.md
+   developer/dev-website-contribute.md
    
 .. toctree::
    :maxdepth: 2
