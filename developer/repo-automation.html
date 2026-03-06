@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website automation and github actions &mdash; Illuminator 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=857d7e63" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=8d563738"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Custom Model Development" href="developer-docstrings.html" />
+    <link rel="prev" title="Software Architecture" href="software-architecture.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/illuminator.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Educational tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorials-overview.html">Tutorials Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial1.html">Tutorial: Power Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial2.html">Tutorial: Electricity Markets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial3.html">Tutorial: Grid Congestion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User's Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/config-file.html">Simulation Configuration File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/simulations.html">Running Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/simulations.html#running-simulations-in-parallel">Running Simulations in Parallel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/connections.html">Connections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references/models.html">Illuminator Models</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer's Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="set-up.html">Set Up Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software-architecture.html">Software Architecture</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Website automation and github actions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#visual-representation-of-github-actions">Visual representation of github actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#action-token">Action Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#potential-alterations-improvements">Potential alterations/improvements</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developer-docstrings.html">Custom Model Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing-explained.html">Testing: basic principles and ideas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-tests.html">Creating/writing tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev-website-contribute.html">Website contributing guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Future Work</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev-cluster-setup.html">Illuminator Cluster Set Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev-dashboard.html">Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references/scenario-api.html">Scenario API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Illuminator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Website automation and github actions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer/repo-automation.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="website-automation-and-github-actions">
+<h1>Website automation and github actions<a class="headerlink" href="#website-automation-and-github-actions" title="Link to this heading"></a></h1>
+<p>In order to automate some tedious processes we have created a new action on github called <em>Start docs update for website</em>, defined within the *. This github action allows the website code to be automatically updated with every push to main.</p>
+<section id="visual-representation-of-github-actions">
+<h2>Visual representation of github actions<a class="headerlink" href="#visual-representation-of-github-actions" title="Link to this heading"></a></h2>
+<p>The image below contains a visual representation of how two of our repositories interact with one another. The simpler of the two, website repo, only contains one action which can be started by two triggers. Either manually or through a push to the main branch. Once either of these trigger the <em>Create/Update Website Action</em>, the website is then automatically created and pushed into a separate branch on the Website repository (gh-pages branch). The Core repository contains multiple different actions, however only the two relevant actions are shown. Publishing a new release on github triggers the <em>New PyPI Release Action</em>. Pushing into main triggers <em>Send Github API POST request</em>. In order for the illuminator package to be hosted on PyPI, we must first trigger <em>New PyPI Release Action</em> by creating a new github release on the Core repository. This PyPI illuminator package is what our website repository is referring to when automatically updating the documentation. The other action, <em>Send Github API POST request</em>, uses the secret token <strong>WEBSITE_ACTION_TOKEN</strong> to gain access to the Website Repo’s actions, and triggers <em>Create/Update Website Action</em> as if it was manually triggered. This secret token is hosted within Core Repo’s secrets, while it was created with the specific Actions read/write access rights exclusive to the website repository.</p>
+<div align="center">
+	<img align="center" src="../_static/img/Illuminator_Repo_Actions.png" width="700">
+</div>
+</section>
+<section id="action-token">
+<h2>Action Token<a class="headerlink" href="#action-token" title="Link to this heading"></a></h2>
+<p>In order to trigger an action in a different repository an appropriate token must be created. This token is similar to the one created for access to github over a personal computer.</p>
+<p>The steps necessary to create an appropriate token:</p>
+<ol class="arabic simple">
+<li><p>Go to your account -&gt; settings -&gt; developer settings</p></li>
+<li><p>Personal access tokens -&gt; Fine-grained tokens -&gt; Generate New Token</p></li>
+<li><p>Give the token any name</p></li>
+<li><p>Change resource owner to illuminator-team</p></li>
+<li><p>Set an expiration date (the maximum is set by the illuminator-team)</p></li>
+<li><p>(Optional) Give a request message</p></li>
+<li><p>Set Repository Acces to Only select repositories</p></li>
+<li><p>Add Illuminator-team/website as your selected repository</p></li>
+<li><p>Under permissions add Actions and set to Read and Write</p></li>
+<li><p>Double check that there is 1 selected repository and 2 permissions (Actions and Metadata)</p></li>
+<li><p>Click Generate token and request access</p></li>
+</ol>
+</section>
+<section id="potential-alterations-improvements">
+<h2>Potential alterations/improvements<a class="headerlink" href="#potential-alterations-improvements" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>There is an action <em>Run Tests</em>, whose output is currently irrelevant to the website. It is possible to use <em>Run Tests</em> action as a prerequisite to <em>Send Github API POST request</em> action in order to double check if all the tests pass before updating the website.</p></li>
+<li><p>Because the website uses the PyPI release of illuminator, if the code docstrings are altered and we wish for it to be visible on the illuminator website we must trigger <em>New PyPI Release Action</em> after we have created a push to main. Updating the website takes around 10 minutes, which gives plenty of time to create a new release, however it might be easier to simply change the trigger of <em>Send Github API POST request</em> from Push to Main to Publish new Github release.</p></li>
+<li><p>The logic of using the Core Repo to trigger something on another repository could be reused for other repos as well. For example, for the Cluster Repo one could copy paste the action <em>Send Github API POST Request</em>, alter a few names and create a new secret token in a similar fashion to <strong>WEBSITE_ACTION_TOKEN</strong>. The only thing new would be the Action which is triggered in the Cluster Repo (for example: running tests)</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="software-architecture.html" class="btn btn-neutral float-left" title="Software Architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="developer-docstrings.html" class="btn btn-neutral float-right" title="Custom Model Development" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Illuminator Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

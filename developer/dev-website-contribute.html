@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website contributing guide &mdash; Illuminator 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=857d7e63" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=8d563738"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+        <script src="../_static/copybutton.js?v=f281be69"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Illuminator Cluster Set Up" href="dev-cluster-setup.html" />
+    <link rel="prev" title="Creating/writing tests" href="writing-tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html">
+            
+              <img src="../_static/illuminator.jpg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Educational tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorials-overview.html">Tutorials Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial1.html">Tutorial: Power Balancing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial2.html">Tutorial: Electricity Markets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorial3.html">Tutorial: Grid Congestion</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User's Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/config-file.html">Simulation Configuration File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/simulations.html">Running Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/simulations.html#running-simulations-in-parallel">Running Simulations in Parallel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/connections.html">Connections</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references/models.html">Illuminator Models</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer's Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="set-up.html">Set Up Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software-architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repo-automation.html">Website automation and github actions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-docstrings.html">Custom Model Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing-explained.html">Testing: basic principles and ideas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-tests.html">Creating/writing tests</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Website contributing guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-images-to-your-page">Adding images to your page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-and-previewing-the-website-through-sphinx">Building and previewing the website through sphinx</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Future Work</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev-cluster-setup.html">Illuminator Cluster Set Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev-dashboard.html">Dashboard</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../references/scenario-api.html">Scenario API</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Illuminator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Website contributing guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer/dev-website-contribute.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="website-contributing-guide">
+<h1>Website contributing guide<a class="headerlink" href="#website-contributing-guide" title="Link to this heading"></a></h1>
+<p>The website is written in markdown format, created through sphinx. These markdown files can be edited/created/deleted to update/create/remove pages.</p>
+<p>In order to contribute to the website, a series of steps should be followed:</p>
+<ol>
+  <li>Download the code from the website repository</li>
+  <li>Create a new branch based off the Dev branch.</li>
+  <li>Make the desired changes to the markdown files located within the source directory.</li>
+  <li>Preview your changes through: 
+    <ul>
+      <li>your IDE of choice (look it up for your ide. 
+<a href="https://code.visualstudio.com/docs/languages/markdown#_markdown-preview">Visual Studio Code Example</a>)</li>
+      <li>building the website through sphinx and then viewing the html</li>
+      <li>any other markdown viewing program</li>
+    </ul>
+  </li>
+  <li>Upload your changes to a separate branch</li>
+  <li>Create a pull request to the Dev branch</li>
+  <li>(Optional) Create a pull request from the Dev branch into the Main branch whenever you are ready for the website to be updated</li>
+</ol> 
+<section id="adding-images-to-your-page">
+<h2>Adding images to your page<a class="headerlink" href="#adding-images-to-your-page" title="Link to this heading"></a></h2>
+<p>Every image that is contained within the website should be stored within the <code class="docutils literal notranslate"><span class="pre">_static</span></code> folder located within source.
+In order to then use that image you must reference it’s location within the markdown page.</p>
+<p>As an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="o">&gt;</span>
+	<span class="o">&lt;</span><span class="n">img</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;../_static/img/Iilluminator.jpg&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s2">&quot;500&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Which results in a centered image, of width 500 like so:</p>
+<div align="center">
+	<img align="center" src="../_static/img/illuminator.jpg" width="500">
+</div>
+</section>
+<section id="building-and-previewing-the-website-through-sphinx">
+<h2>Building and previewing the website through sphinx<a class="headerlink" href="#building-and-previewing-the-website-through-sphinx" title="Link to this heading"></a></h2>
+<p>Building and previewing the website before it is uploaded on github is highly recommended. In order to create this preview a series of steps must be followed. Example over command line interface:</p>
+<ol>
+  <li>Ensure you are in the correct directory with your terminal (your directory should see README.md and source)</li>
+  <li>Prepare your environment:
+    <ol>
+      <li>python3 -m venv .venv</li>
+      <li>Activate your work environment:
+        <ul>
+            <li>MacOS & Linux: source .venv/bin/activate</li>
+            <li>Windows: .venv\Scripts\activate </li>
+        </ul>
+        </li>
+      <li>pip install -r source/requirements.txt</li>
+      <li>pip install illuminator --no-deps</li>
+    </ol>
+  </li>
+  <li>Make your changes (if you added a new page make sure to add it to index.rst so its visible in the side-bar)</li>
+  <li>Build using sphinx:
+    <ul>
+        <li>sphinx-build source docs (NOTE: the name docs can be changed if you wish)</li>
+        <li>sphinx-build source docs --fail-on-warning (optional flag, sometimes it works sometimes it does not. The warnings do not break the website build)</li> 
+    </ul>
+  </li>
+  <li>Open any html document located within your new folder using your web browser to preview your website</li>
+  <li>[Important] After you are done and want to push your changes to github you must ensure that you either delete the folder which was created when building this website, or add it to .gitignore if you plan on reusing it (see .gitignore file for examples)</li>
+</ol> 
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="writing-tests.html" class="btn btn-neutral float-left" title="Creating/writing tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dev-cluster-setup.html" class="btn btn-neutral float-right" title="Illuminator Cluster Set Up" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Illuminator Team.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
