@@ -4,6 +4,4 @@
 **venv/
 **src/
 **docs/
-**.source/_build/
-
-**docs/
+**source/_build/
